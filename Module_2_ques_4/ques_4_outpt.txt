@@ -1,0 +1,4 @@
+pavan03@pavankalyan:~/Downloads/Module_2_ques_4$ ./ques4_script.sh 
+Process with highest memory usage: 3317
+Terminated the process of PID: 3317
+

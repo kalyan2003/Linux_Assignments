@@ -1,0 +1,24 @@
+pavan03@pavankalyan:~/Downloads$ cd Module_2_ques_3
+pavan03@pavankalyan:~/Downloads/Module_2_ques_3$ touch logFile.txt
+pavan03@pavankalyan:~/Downloads/Module_2_ques_3$ gedit logFile.txt 
+pavan03@pavankalyan:~/Downloads/Module_2_ques_3$ cat logFile.txt
+DEBUG: Starting the application initialization.
+ERROR: Unable to connect to the database.
+INFO: User 'admin' logged in successfully.
+DEBUG: Fetching configuration settings from the server.
+ERROR: DEBUG - Configuration settings could not be applied.
+INFO: Scheduled job 'backup' completed successfully.
+DEBUG: Connection to server timed out. Retrying...
+ERROR: Failed to fetch data from API endpoint '/users'.
+INFO: Maintenance mode activated.
+ERROR: DEBUG - Query execution failed due to a syntax error.
+DEBUG: Reloading application modules.
+ERROR: Missing required parameter in the request.
+INFO: Shutting down the system gracefully.
+DEBUG: Closing unused network connections.
+ERROR: DEBUG - Unexpected server response received.
+
+// Main command to search for lines with error excluding debug in the lines
+
+pavan03@pavankalyan:~/Downloads/Module_2_ques_3$ awk '/ERROR/ && !/DEBUG/' logFile.txt > filtered_log.txt
+

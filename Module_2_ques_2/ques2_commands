@@ -1,0 +1,17 @@
+pavan03@pavankalyan:~/Downloads$ mkdir Module_2_ques_2
+pavan03@pavankalyan:~/Downloads$ cd Module_2_ques_2/
+pavan03@pavankalyan:~/Downloads/Module_2_ques_2$ touch config.txt
+pavan03@pavankalyan:~/Downloads/Module_2_ques_2$ gedit config.txt 
+pavan03@pavankalyan:~/Downloads/Module_2_ques_2$ cat config.txt 
+# Sample Configuration File
+server = localhost
+database_host = localhost
+port = 3306
+api_url = http://localhost:8080
+log_path = /var/log/localhost
+timeout = 30
+
+//Main command to replace localhost to 127.0.0.1
+
+pavan03@pavankalyan:~/Downloads/Module_2_ques_2$ sed 's/localhost/127.0.0.1/g' config.txt > updated_config.txt
+

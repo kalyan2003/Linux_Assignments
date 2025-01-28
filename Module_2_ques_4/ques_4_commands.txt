@@ -1,0 +1,19 @@
+pavan03@pavankalyan:~/Downloads$ mkdir Module_2_ques_4
+pavan03@pavankalyan:~/Downloads$ cd Module_2_ques_4
+pavan03@pavankalyan:~/Downloads/Module_2_ques_4$ touch ques4_script.sh
+pavan03@pavankalyan:~/Downloads/Module_2_ques_4$ gedit ques4_script.sh 
+
+//commands part in solving the question
+
+pavan03@pavankalyan:~/Downloads/Module_2_ques_4$ chmod +x ques4_script.sh 
+pavan03@pavankalyan:~/Downloads/Module_2_ques_4$ ls -l ques4_script.sh 
+-rwxrwxr-x 1 pavan03 pavan03 362 Jan 28 22:00 ques4_script.sh
+
+// Executing the script file
+
+pavan03@pavankalyan:~/Downloads/Module_2_ques_4$ ./ques4_script.sh 
+
+//output
+Process with highest memory usage: 3317
+Terminated the process of PID: 3317
+

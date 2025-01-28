@@ -1,0 +1,1 @@
+pavan03@pavankalyan:~$ find . -type f -size +1M > outputFile.txt

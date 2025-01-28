@@ -1,0 +1,13 @@
+pavan03@pavankalyan:~/Downloads/Module_2_ques_5$ ip route
+default via 10.0.2.2 dev enp0s3 proto dhcp metric 100 
+10.0.2.0/24 dev enp0s3 proto kernel scope link src 10.0.2.15 metric 100 
+169.254.0.0/16 dev enp0s3 scope link metric 1000 
+
+// command to find the default gateway
+
+pavan03@pavankalyan:~/Downloads/Module_2_ques_5$ ip route | awk '/default/ {print $3}' | sort
+
+//terminal output
+
+10.0.2.2
+
