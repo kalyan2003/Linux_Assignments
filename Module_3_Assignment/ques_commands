@@ -1,0 +1,18 @@
+pavan03@pavankalyan:~/Downloads$ touch backup_manager.sh
+pavan03@pavankalyan:~/Downloads$ nano backup_manager.sh 
+pavan03@pavankalyan:~/Downloads$ chmod 777 backup_manager.sh 
+pavan03@pavankalyan:~/Downloads$ ls -l backup_manager.sh 
+-rwxrwxrwx 1 pavan03 pavan03 2470 Jan 29 16:09 backup_manager.sh
+pavan03@pavankalyan:~/Documents$ mkdir backup_dir
+
+//Main command for script execution
+
+pavan03@pavankalyan:~$ ./Downloads/backup_manager.sh "Downloads/" "Documents/backup_dir/" ".txt"
+Backing up files...
+Backed up: file1.txt (0 bytes)
+Backed up: hello2.txt (0 bytes)
+Backed up: hello.txt (18 bytes)
+Backed up: helo.txt (18 bytes)
+Backed up: hi.txt (443 bytes)
+Backup completed. Report saved at Documents/backup_dir//backup_report.log
+
