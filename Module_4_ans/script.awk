@@ -10,10 +10,10 @@ BEGIN { output_file = "output.txt"; print "" > output_file }
 
 /"wlan.fc.type"/ {
     gsub(/"|,/, "", $2);
-    print "\"wlan.fc.type\": \"" $2 "" >> output_file;
+    print "\"wlan.fc.type\": \"" $2 "\"," >> output_file;
 }
 
 /"wlan.fc.subtype"/ {
     gsub(/"|,/, "", $2);
-    print "\"wlan.fc.subtype\": \"" $2 "" >> output_file;
+    print "\"wlan.fc.subtype\": \"" $2 "\"," >> output_file;
 }
