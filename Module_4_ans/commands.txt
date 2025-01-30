@@ -1,0 +1,4 @@
+pavan03@pavankalyan:~/Downloads$ touch script.awk
+pavan03@pavankalyan:~/Downloads$ gedit script.awk
+pavan03@pavankalyan:~/Downloads$ awk -f script.awk inputFileforModule4.txt
+
