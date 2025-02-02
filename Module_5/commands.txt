@@ -1,0 +1,38 @@
+pavan03@pavankalyan:~/Downloads$ ./file_analyzer.sh -d dir1/ -k hello
+Found in: dir1//dir2/textfile1.txt
+Found in: dir1//dir2/textfile2.txt
+Script executed successfully. Exit status: 0
+
+pavan03@pavankalyan:~/Downloads$ ./file_analyzer.sh -f dir1/dir2/textfile1.txt -k hello
+hello pavan kalyan 
+hello 
+Found in: dir1/dir2/textfile1.txt
+Script executed successfully. Exit status: 0
+
+pavan03@pavankalyan:~/Downloads$ ./file_analyzer.sh --help
+Usage: ./file_analyzer.sh [OPTIONS]
+
+Options:
+  -d <directory>   Search for files in the specified directory recursively.
+  -k <keyword>     Keyword to search for in files.
+  -f <file>        Search for the keyword in the specified file.
+  --help           Display this help menu.
+
+Example:
+  ./file_analyzer.sh -d /path/to/dir -k keyword
+  ./file_analyzer.sh -f filename.txt -k keyword
+  
+  
+pavan03@pavankalyan:~/Downloads$ ./file_analyzer.sh -f dir1/dir2/textfile1.txt -k hellokalyan
+Not found in: dir1/dir2/textfile1.txt
+Script executed successfully. Exit status: 0
+
+
+pavan03@pavankalyan:~/Downloads$ ./file_analyzer.sh -f dir1/dir2/textfile3.txt -k test
+Error: File 'dir1/dir2/textfile3.txt' does not exist.
+pavan03@pavankalyan:~/Downloads$ cat errors.log 
+Error: File 'dir1/dir2/textfile3.txt' does not exist.
+
+
+
+
